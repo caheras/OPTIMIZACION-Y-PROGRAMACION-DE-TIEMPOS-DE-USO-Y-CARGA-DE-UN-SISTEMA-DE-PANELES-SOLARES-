@@ -30,7 +30,7 @@ def encontrar_raiz_newton_raphson_modificado(Vmpp, Impp, Eficiencia, Consumo_Pro
         # Verificar si la derivada es cercana a cero
         if abs(df_guess) < 1e-12:
             print("La derivada es cercana a cero.")
-            return None
+            return
 
         T_guess = T_guess - f_guess / df_guess
 
